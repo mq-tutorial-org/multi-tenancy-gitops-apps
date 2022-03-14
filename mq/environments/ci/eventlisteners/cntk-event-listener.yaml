@@ -18,14 +18,3 @@ spec:
       - ref: cnkt-trigger-binding
     template:
       ref: mq-infra-dev
-  # - name: mq-spring-app-dev
-  #   interceptors:
-  #     - ref:
-  #         name: "cel"
-  #       params:
-  #       - name: "filter"
-  #         value: "header.match('X-GitHub-Event', 'push') && body.ref == 'refs/heads/master' && body.repository.full_name == 'mq-tutorial-org/mq-spring-app'"
-  #   bindings:
-  #     - ref: cnkt-trigger-binding
-  #   template:
-  #     ref: mq-spring-app-dev
